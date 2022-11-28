@@ -85,7 +85,7 @@ function App() {
       <div className="container">
         {uploadedImage ? (
           <>
-            <div className="my-node">
+            <div id="my-node">
               <img
                 className="picture"
                 src={URL.createObjectURL(uploadedImage)}
