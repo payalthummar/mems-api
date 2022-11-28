@@ -140,7 +140,7 @@ function App() {
       <input
         type="file"
         ref={fileRef}
-        onChange={(e) => setUploadedImage("file", e.target.files[0])}
+        onChange={(e) => setUploadedImage(e.target.files[0])}
       />
       <button onClick={saveImage}>Save Image</button>
       <button onClick={reset}>Reset</button>
