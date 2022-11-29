@@ -66,7 +66,7 @@ function App() {
     setBottomText("");
     setUploadedImage(null);
   };
-  const getRandomImage = (array) => {
+  const getRandomNumber = (array) => {
     const result = Math.floor(Math.random() * array.length);
     return result;
   };
@@ -114,9 +114,14 @@ function App() {
       <br />
       <br />
       {/* <img src={memes[memePosition]?.url} />
-      <button onClick={() => setMemePosition(getRandomImage(memes))}>
+      <button onClick={() => setMemePosition(getRandomNumber(memes))}>
         Random meme
       </button> */}
+      <img
+        className="picture"
+        src={memes[getRandomNumber(memes)]?.url}
+        alt={memes[getRandomNumber(memes)]?.name}
+      />
       <button onClick={prevMeme}>Prev</button>
       <button onClick={nextMeme}>Next</button>
       <br />
