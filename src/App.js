@@ -78,6 +78,7 @@ function App() {
   };
 
   console.log("data", memes);
+  console.log("memes", memes);
   return (
     <div className="App">
       <h1>Memes Generator</h1>
